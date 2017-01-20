@@ -1,9 +1,10 @@
+
 body {
   margin: 0px;
   padding: 0px;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #3DC1ED;
+  background-color: #455566;
   color: white;
   margin-top: 5%;
 }
@@ -13,16 +14,14 @@ blockquote {
   background-color: #fefefe;
   width: 50%;
   margin: auto auto;
-  color: #3DC1ED;
+  color: #455566;
   padding: 10px 25px 5px 10px;
   text-align: center;
   font-size: 160%;
 }
-
 p {
-  display: inline;
+display: inline;
 }
-
 #container {
   background-color: white;
   width: 50%;
@@ -34,16 +33,22 @@ p {
 #btn {
   text-align: center;
   padding: 5px;
-  font-size: 120%;
+  font-size: 95%;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #3DC1ED;
+  background-color: #455566;
   margin-top: 5px;
   margin-left: 65%;
   margin-bottom: 1%;
-  height: 60px;
+  height: 40px;
+  width: 100px;
   color: white;
   border: none;
   border-radius: 5px;
+  outline: none;
+}
+
+#btn:hover {
+  background-color: #556576;
 }
 
 #author {
@@ -59,17 +64,16 @@ p {
 
 #twitter {
   color: white;
-  background-color: #3DC1ED;
+  background-color: #455566;
   border: none;
   width: 40px;
   height: 40px;
   padding-top: 12px;
   border-radius: 4px;
   font-size: 1.1em;
+  outline: none;
 }
-@media screen and (max-width:750px) {
-	#btn {
-		margin-left:0px;
-		width:100%;
-	}
+
+#twitter:hover {
+  background-color: #556576;
 }

@@ -1,5 +1,6 @@
 var quote = document.getElementById("quote");
 function randomQuote() {
+  $("body").fadeOut(200);
   $.ajax({
       url: "https://quotesondesign.com/wp-json/posts?",
       dataType: "jsonp",
@@ -8,9 +9,12 @@ function randomQuote() {
   });
 }
 function callback(data) {
-	console.log(data[0].content);
+  $("body").fadeIn(150);
 	quote.innerHTML = data[0].content + "<br />" ;
 	quote.innerHTML += "<small id = 'author'> - "+ data[0].title +"</small>";
+
+  var twitter = "https://twitter.com/intent/tweet?text=" + quote.textContent + "&hashtags=quote";
+  $(".twitter-share-button").attr("href", twitter);
 }
 $(document).ready(randomQuote());
 $("#btn").click(function(){
